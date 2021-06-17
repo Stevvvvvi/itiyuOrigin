@@ -1,0 +1,67 @@
+*, *:before, *:after {
+    box-sizing: inherit;
+    padding:0;
+    margin: 0;
+}
+
+body {
+	background: #e0e0e0;
+    font: 12px 微软雅黑, "Microsoft YaHei", HELVETICA;
+    font-size:18px;
+}
+
+.header_content{
+    width:100%;
+    height: 80px;
+    background: white;
+    position:fixed;
+    overflow: hidden;
+    z-index: 10;
+}
+.header_content .header_wrapper{
+    width: 1200px;
+    margin: 0px auto;
+    height: 100%;
+    display: flex;
+    /* align-items: center; */
+    background: transparent;
+    justify-content: space-between;
+}
+.header_content .header_wrapper .header_logo {
+    height: 100%;
+    background: white;
+}
+.header_content .header_wrapper .header_logo a{
+    height: 100%;
+}
+.header_content .header_wrapper a img{
+    height: 100%;
+}
+.header_content .header_wrapper .header_skew{
+    width: 20px;
+    height: 100%;
+    transform:skew(-45deg);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 16%, rgba(140,140,140,1) 100%);
+}
+.header_content .header_wrapper .header_list{
+    background: grey;
+    height:60%;
+    position: relative;
+    top:0;
+    width: 60%;
+    
+}
+.header_content .header_wrapper ul{
+    
+    display: flex;
+    justify-content: space-around;
+	white-space: nowrap;
+}
+
+
+@media only screen and (max-width:1200px) {
+    .header_content .header_wrapper{
+        width:100%;
+    }
+}
